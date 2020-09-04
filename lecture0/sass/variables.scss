@@ -1,0 +1,14 @@
+// Sass allows us to define variables for css code
+//Sass must be compiled to a css file before being used.
+$color: red;
+
+//the rest of the styling is just like regular css
+ul {
+  color: $color;
+  font-size: 14px;
+}
+
+ol {
+    color: $color;
+  font-size: 18px;
+}

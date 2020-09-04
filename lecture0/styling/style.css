@@ -1,0 +1,11 @@
+/* ids must be referenced with '#' in front of their name */
+/*#foo {
+  color: blue;
+  text-align: center;
+}*/
+
+/* classes must be referenced with a '.' in front */
+.head {
+  color: blue;
+  text-align: center;
+}
