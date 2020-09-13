@@ -1,0 +1,15 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+  <h1>Tasks</h1>
+  <ul>
+    <!-- for loops can also be used in the braces -->
+    {% for task in tasks %}
+      <li>{{ task }}</li>
+      {% empty %}
+      <li>No Tasks</li>
+    {% endfor %}
+  </ul>
+  <!-- references the name in the urls.py file -->
+  <a href="{% url 'tasks:add' %}">Add a New Task</a>
+{% endblock %}
