@@ -1,0 +1,15 @@
+name: Testing
+# when the actions should be run
+on: push
+
+jobs:
+  test_project:
+    # which GitHub virtual machine to run the job on
+    runs-on: ubuntu-latest
+    # what should happen when the job is run
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Django unit tests
+      run: |
+        pip3 install --user django
+        python3 ./lecture7/airline0/manage.py test ./lecture7/airline0/
