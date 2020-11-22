@@ -19,4 +19,10 @@
 ### GitHub Actions
 * Automates some actions (ex: tests) when code is pushed to a repository
   * Written in YAML
-  * Must be in root directory of repository
+  * Must be in root directory of repository with the file structure `.github/workflow/file.yml`
+
+### Docker
+* Runs code in a container
+  * Ensures that everyone is working in an identical environment; resolves issues in differences in computers/os.
+* Docker compose lets you combine multiple docker environments together
+* Start docker containers with `docker-compose up`
